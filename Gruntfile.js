@@ -63,6 +63,12 @@ module.exports = function(grunt) {
             action: "deleteApplicationVersion",
             versionName: 'test-grunt-aws',
             deleteSource: true
+        },
+        deploy: {
+            service: "elasticBeanstalk",
+            action: "updateEnvironment",
+            versionName: 'test-grunt-aws',
+            environmentName: 'grunt-testing'
         }
     };
 
