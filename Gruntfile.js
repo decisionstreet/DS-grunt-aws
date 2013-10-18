@@ -49,6 +49,20 @@ module.exports = function(grunt) {
             bucket: 'elasticbeanstalk-us-east-1-948269656986',
             key: 'test',
             file: 'README.md'
+        },
+        createVersion: {
+            service: "elasticBeanstalk",
+            action: "createApplicationVersion",
+            file: 'README.md',
+            versionName: 'test-grunt-aws',
+            versionDescription: '',
+            versionKey: 'ima-testing-create-version'
+        },
+        deleteVersion: {
+            service: "elasticBeanstalk",
+            action: "deleteApplicationVersion",
+            versionName: 'test-grunt-aws',
+            deleteSource: true
         }
     };
 
