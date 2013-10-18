@@ -1,0 +1,8 @@
+/*****
+ * Copy this file, fill out the params, and remove the '.template'
+ */
+{
+    "accessKeyId": "YOUR ACCESS KEY ID",
+    "secretAccessKey": "YOUR SECRET ACCESS KEY",
+    "region": "YOUR REGION"
+}
