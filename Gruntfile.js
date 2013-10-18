@@ -30,12 +30,25 @@ module.exports = function(grunt) {
         options: {
             access: accessConfig,
             beanstalk: {
-                applicationName: 'Drive'
+                applicationName: 'Drive',
+                versionBucket: 'elasticbeanstalk-us-east-1-948269656986',
+                versionKeyPrefix: ''
             }
         },
         listEnvironments: {
             service: "elasticBeanstalk",
             action: "describeEnvironments"
+        },
+        listVersions: {
+            service: "elasticBeanstalk",
+            action: "describeApplicationVersions"
+        },
+        uploadFile: {
+            service: "s3",
+            action: "putObject",
+            bucket: 'elasticbeanstalk-us-east-1-948269656986',
+            key: 'test',
+            file: 'README.md'
         }
     };
 

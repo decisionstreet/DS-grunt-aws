@@ -1,3 +1,4 @@
 .idea/
 node_modules/
 awsAccess.json
+npm-debug.log

@@ -6,7 +6,7 @@ module.exports = function (grunt) {
         var done = this.async();
 
         if (this.data.action === undefined) {
-            throw new Error('AWS targets must have an "action" defined')
+            throw new Error('AWS targets must have an "action" defined');
         } else if (this.data.service === undefined) {
             throw new Error('AWS targets must have "service" defined');
         }
