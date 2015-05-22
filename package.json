@@ -1,29 +1,23 @@
 {
   "name": "grunt-aws",
-  "version": "0.0.2",
-
+  "version": "0.0.3",
   "private": true,
-
   "repository": {
     "type": "git",
     "url": "git@github.com:decisionstreet/grunt-aws.git"
   },
-
   "scripts": {
     "test": "grunt test"
   },
-
   "dependencies": {
-    "underscore": "1.4.4",
-    "aws-sdk": "1.8.1"
+    "aws-sdk": "1.8.1",
+    "bluebird": "2.9.25",
+    "underscore": "1.4.4"
   },
-
   "devDependencies": {
     "grunt-contrib-jshint": "0.6.4"
   },
-
   "peerDependencies": {
     "grunt": "~0.4.1"
   }
-	
 }
